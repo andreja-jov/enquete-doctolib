@@ -40,8 +40,15 @@
       </div>
     </section>
 
-    <figure class="chart narrow">
-      <img src="https://primary.jwwb.nl/public/k/c/g/temp-qszgbrvemttdthedyeht/capture-d-cran-2026-11-02-12-01-06-standard.png" alt="">
+    <figure class="viz panel limits">
+      <h3 class="viz-title">Les limites de l’enquête :</h3>
+      <ul class="stats">
+        <li><strong>Un échantillon de 63 sondés peu représentatif :</strong> les étudiants de 18-25 ans – et de Sciences Po – constituent le groupe le + important (60% des répondants). Les perceptions des personnes plus âgées sont donc moins bien documentées, et l’absence de répondants âgés de 26 à 40 ans crée un trou dans notre analyse des pratiques selon l’âge.</li>
+        <li><strong>Des sous-groupes restreints :</strong> les résultats concernant les déserts médicaux reposent sur seulement 7 personnes. Il est donc impossible de mesure de manière représentative l’impact réel de Doctolib sur l’accès aux soins dans ces territoires.</li>
+        <li><strong>Des données déclaratives :</strong> le questionnaire mesure des pratiques et des perceptions, pas l’efficacité réelle de Doctolib ni la sécurité effective de ses systèmes.</li>
+        <li><strong>Des corrélations à interpréter avec prudence :</strong> les croisements permettent d’identifier des tendances, mais pas d’établir des liens de causalité.</li>
+      </ul>
+      <p class="viz-takeaway"><span class="arrow" aria-hidden="true">⟶</span> <strong>En somme, cette enquête permet d’illustrer les contradictions de Doctolib à partir de l’expérience des patients, mais doit être confrontée aux entretiens avec les médecins et aux données institutionnelles pour approfondir l’analyse.</strong></p>
     </figure>
 
     <section class="interviews">
@@ -197,20 +204,5 @@
   </main>
 
   <footer>© 2026 enquête Doctolib</footer>
-  <div class="lightbox" id="lightbox" role="dialog" aria-label="Graphique agrandi"><img alt=""></div>
-  <script>
-    (function () {
-      var box = document.getElementById('lightbox');
-      var big = box.querySelector('img');
-      document.querySelectorAll('.chart img, .split img.chart-img').forEach(function (img) {
-        img.tabIndex = 0;
-        function open() { big.src = img.src; box.classList.add('open'); }
-        img.addEventListener('click', open);
-        img.addEventListener('keydown', function (e) { if (e.key === 'Enter') open(); });
-      });
-      box.addEventListener('click', function () { box.classList.remove('open'); });
-      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') box.classList.remove('open'); });
-    })();
-  </script>
 </body>
 </html>
